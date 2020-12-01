@@ -33,10 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func initializeWindow() {
-        guard let rootViewController = Router.resolveVC(FieldsOfScienceViewController.self) else {
-            fatalError("cannot resolve root view controller")
-        }
-
+        let rootViewController = MainTabBarViewController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController =
             UINavigationController(rootViewController: rootViewController)

@@ -36,7 +36,7 @@ class Router {
     }
 
     class func resolveVC<VCType: MVVMViewController>(_ vcType: VCType.Type,
-                                                     params: [String: Any] = [:]) -> UIViewController? {
+                                                     params: [String: Any] = [:]) -> UIViewController {
         return VCType.buildModule(withNavigationParams: params)
     }
 

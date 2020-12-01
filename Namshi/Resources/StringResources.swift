@@ -7,5 +7,10 @@
 
 import Foundation
 
-struct StringResources {
+extension String {
+    static var tabBatTitle_Home = "Home"
+    static var tabBatTitle_Catalog = "Catalog"
+    static var tabBatTitle_Wishlist = "Wishlist"
+    static var tabBatTitle_Cart = "Cart"
+    static var tabBatTitle_Profile = "Profile"
 }

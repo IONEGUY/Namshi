@@ -17,6 +17,7 @@ class DIContainerConfigurator {
     }
 
     private static func registerViewModels() {
-//        container.autoregister(FieldsOfScienceViewModel.self, initializer: FieldsOfScienceViewModel.init)
+        container.autoregister(HomeViewModel.self, initializer: HomeViewModel.init)
+        container.autoregister(CatalogViewModel.self, initializer: CatalogViewModel.init)
     }
 }

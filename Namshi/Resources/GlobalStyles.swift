@@ -16,5 +16,7 @@ class GlobalStyles {
     private class func setupTransparentNavigationBar() {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().barTintColor = .tabBarTintColor
+        UITabBar.appearance().tintColor = .tabBarSelectedItemColor
     }
 }
