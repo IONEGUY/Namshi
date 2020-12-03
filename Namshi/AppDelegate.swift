@@ -33,10 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func initializeWindow() {
-        let rootViewController = MainTabBarViewController()
+        let rootViewController =
+            UINavigationController(rootViewController: MainTabBarViewController())
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController =
-            UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
 }

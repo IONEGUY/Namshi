@@ -14,7 +14,6 @@ target 'Namshi' do
   pod 'IQKeyboardManagerSwift'
   pod 'SnapKit', '~> 5.0.0'
 
-
   target 'NamshiTests' do
     inherit! :search_paths
     # Pods for testing
