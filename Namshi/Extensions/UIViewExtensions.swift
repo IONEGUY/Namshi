@@ -19,6 +19,17 @@ extension UIView {
         layer.borderWidth = borderWidth ?? 3
         return self
     }
+    
+    func addShadow(shadowColor: CGColor? = nil,
+                   shadowOffset: CGSize? = nil,
+                   shadowOpacity: Float? = nil,
+                   shadowRadius: CGFloat? = nil) {
+        clipsToBounds = false
+        layer.shadowColor = shadowColor ?? backgroundColor?.cgColor
+        layer.shadowOffset = shadowOffset ?? .zero
+        layer.shadowOpacity = shadowOpacity ?? 1
+        layer.shadowRadius = shadowRadius ?? layer.cornerRadius
+    }
 
     func fillSuperview() {
         guard let superview = self.superview else { return }
