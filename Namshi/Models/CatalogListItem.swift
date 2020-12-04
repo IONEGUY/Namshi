@@ -12,5 +12,5 @@ struct CatalogListItem {
     var color: UIColor
     var imageName: String
     var categoryName: String
-    var tapHandler: ((String) -> ())?
+    var tapHandler: (() -> ())?
 }
