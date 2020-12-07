@@ -29,6 +29,12 @@
 		FA9DF8EB257553FA0039FC18 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF8EA257553FA0039FC18 /* HomeViewModel.swift */; };
 		FA9DF8F3257563F50039FC18 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF8F2257563F50039FC18 /* CatalogViewController.swift */; };
 		FA9DF8F9257564270039FC18 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF8F8257564270039FC18 /* CatalogViewModel.swift */; };
+		FA9DF9172576CE000039FC18 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF9162576CE000039FC18 /* SearchBarViewController.swift */; };
+		FA9DF9282577DDBE0039FC18 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF9272577DDBE0039FC18 /* Initializable.swift */; };
+		FA9DF9302577DF050039FC18 /* PageControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF92F2577DF050039FC18 /* PageControlDelegate.swift */; };
+		FA9DF950257846920039FC18 /* ClothesListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF94F257846920039FC18 /* ClothesListContainer.swift */; };
+		FA9DF955257848A60039FC18 /* ClothesListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF954257848A60039FC18 /* ClothesListItemCell.swift */; };
+		FA9DF95E257848ED0039FC18 /* ClothesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF95D257848ED0039FC18 /* ClothesListItem.swift */; };
 		FAAA4BE02571202A00D42624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA4BDF2571202A00D42624 /* AppDelegate.swift */; };
 		FAAA4BE92571202C00D42624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAA4BE82571202C00D42624 /* Assets.xcassets */; };
 		FAAA4BEC2571202C00D42624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA4BEA2571202C00D42624 /* LaunchScreen.storyboard */; };
@@ -82,6 +88,12 @@
 		FA9DF8EA257553FA0039FC18 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FA9DF8F2257563F50039FC18 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		FA9DF8F8257564270039FC18 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		FA9DF9162576CE000039FC18 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		FA9DF9272577DDBE0039FC18 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
+		FA9DF92F2577DF050039FC18 /* PageControlDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlDelegate.swift; sourceTree = "<group>"; };
+		FA9DF94F257846920039FC18 /* ClothesListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesListContainer.swift; sourceTree = "<group>"; };
+		FA9DF954257848A60039FC18 /* ClothesListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesListItemCell.swift; sourceTree = "<group>"; };
+		FA9DF95D257848ED0039FC18 /* ClothesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesListItem.swift; sourceTree = "<group>"; };
 		FAAA4BDC2571202A00D42624 /* Namshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namshi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA4BDF2571202A00D42624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAA4BE82571202C00D42624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +214,7 @@
 		FA9DF8342574ED050039FC18 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FA9DF954257848A60039FC18 /* ClothesListItemCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -209,6 +222,7 @@
 		FA9DF83A2574ED050039FC18 /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				FA9DF94F257846920039FC18 /* ClothesListContainer.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -216,10 +230,9 @@
 		FA9DF8432574ED050039FC18 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				FA9DF9152576CDD50039FC18 /* Base */,
 				FA9DF8F7257563FA0039FC18 /* Catalog */,
 				FA9DF8E9257553DB0039FC18 /* Home */,
-				FA9DF85A2574ED050039FC18 /* BaseViewController.swift */,
-				FA9DF8D1257512840039FC18 /* MainTabBarViewController.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -240,6 +253,33 @@
 				FA9DF8F8257564270039FC18 /* CatalogViewModel.swift */,
 			);
 			path = Catalog;
+			sourceTree = "<group>";
+		};
+		FA9DF9152576CDD50039FC18 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DF8D1257512840039FC18 /* MainTabBarViewController.swift */,
+				FA9DF85A2574ED050039FC18 /* BaseViewController.swift */,
+				FA9DF9162576CE000039FC18 /* SearchBarViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FA9DF9262577DD9F0039FC18 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DF9272577DDBE0039FC18 /* Initializable.swift */,
+				FA9DF92F2577DF050039FC18 /* PageControlDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA9DF95C257848CD0039FC18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DF95D257848ED0039FC18 /* ClothesListItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FAAA4BD32571202A00D42624 = {
@@ -267,6 +307,8 @@
 		FAAA4BDE2571202A00D42624 /* Namshi */ = {
 			isa = PBXGroup;
 			children = (
+				FA9DF95C257848CD0039FC18 /* Models */,
+				FA9DF9262577DD9F0039FC18 /* Protocols */,
 				FA9DF8302574ED050039FC18 /* Views */,
 				FA9DF8232574ECA20039FC18 /* Resources */,
 				FA9DF8152574EC7C0039FC18 /* Extensions */,
@@ -540,19 +582,25 @@
 				FA9DF81B2574EC7C0039FC18 /* StringExtensions.swift in Sources */,
 				FA9DF81D2574EC7C0039FC18 /* NSObjectExtensions.swift in Sources */,
 				FA9DF8922574F4710039FC18 /* GlobalStyles.swift in Sources */,
+				FA9DF9172576CE000039FC18 /* SearchBarViewController.swift in Sources */,
 				FA9DF8292574ECA20039FC18 /* Colors.swift in Sources */,
 				FA9DF8F3257563F50039FC18 /* CatalogViewController.swift in Sources */,
+				FA9DF950257846920039FC18 /* ClothesListContainer.swift in Sources */,
+				FA9DF95E257848ED0039FC18 /* ClothesListItem.swift in Sources */,
 				FA9DF81F2574EC7C0039FC18 /* UIColorExtensions.swift in Sources */,
 				FA9DF8792574ED050039FC18 /* BaseViewController.swift in Sources */,
 				FA9DF80F2574EB640039FC18 /* MVVMViewController.swift in Sources */,
 				FA9DF81E2574EC7C0039FC18 /* UIApplicationExtensions.swift in Sources */,
 				FAAA4BE02571202A00D42624 /* AppDelegate.swift in Sources */,
+				FA9DF9302577DF050039FC18 /* PageControlDelegate.swift in Sources */,
 				FA9DF8272574ECA20039FC18 /* StringResources.swift in Sources */,
 				FA9DF8E2257553B00039FC18 /* HomeViewController.swift in Sources */,
 				FA9DF8102574EB640039FC18 /* Router.swift in Sources */,
 				FA9DF8112574EB640039FC18 /* DIContainerConfigurator.swift in Sources */,
 				FA9DF81C2574EC7C0039FC18 /* UIViewExtensions.swift in Sources */,
+				FA9DF955257848A60039FC18 /* ClothesListItemCell.swift in Sources */,
 				FA9DF80E2574EB640039FC18 /* NavigatedToAware.swift in Sources */,
+				FA9DF9282577DDBE0039FC18 /* Initializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

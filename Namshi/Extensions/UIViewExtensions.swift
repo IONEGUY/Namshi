@@ -10,12 +10,11 @@ import UIKit
 
 extension UIView {
     @discardableResult
-    func applyRoundedStyle(borderColor: UIColor? = nil,
+    func applyRoundedStyle(borderColor: UIColor = .clear,
                            cornerRadius: CGFloat? = nil,
                            borderWidth: CGFloat? = nil) -> Self {
-        clipsToBounds = false
-        layer.borderColor = borderColor?.cgColor ??
-            UIColor.clear.cgColor
+        clipsToBounds = true
+        layer.borderColor = borderColor.cgColor
         layer.cornerRadius = cornerRadius ?? frame.height / 2
         layer.borderWidth = borderWidth ?? 3
         return self

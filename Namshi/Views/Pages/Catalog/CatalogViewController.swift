@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CatalogViewController: UIViewController, MVVMViewController {
+class CatalogViewController: SearchBarViewController, MVVMViewController {
     typealias ViewModelType = CatalogViewModel
     
     var viewModel: CatalogViewModel?
@@ -15,6 +15,5 @@ class CatalogViewController: UIViewController, MVVMViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 }
