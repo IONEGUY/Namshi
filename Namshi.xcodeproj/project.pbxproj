@@ -35,6 +35,12 @@
 		FA9DF950257846920039FC18 /* ClothesListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF94F257846920039FC18 /* ClothesListContainer.swift */; };
 		FA9DF955257848A60039FC18 /* ClothesListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF954257848A60039FC18 /* ClothesListItemCell.swift */; };
 		FA9DF95E257848ED0039FC18 /* ClothesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF95D257848ED0039FC18 /* ClothesListItem.swift */; };
+		FA9DF993257A347C0039FC18 /* CatalogListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF992257A347B0039FC18 /* CatalogListItemCell.swift */; };
+		FA9DF998257A35920039FC18 /* CatalogListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF997257A35920039FC18 /* CatalogListItem.swift */; };
+		FA9DF99E257A68340039FC18 /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF99D257A68340039FC18 /* ClothingViewController.swift */; };
+		FA9DF9A3257A68D10039FC18 /* ClothingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF9A2257A68D10039FC18 /* ClothingViewModel.swift */; };
+		FA9DF9A9257ADBA50039FC18 /* ClothingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF9A8257ADBA50039FC18 /* ClothingType.swift */; };
+		FA9DF9AE257AE42A0039FC18 /* ClothingListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF9AD257AE42A0039FC18 /* ClothingListItemTableViewCell.swift */; };
 		FAAA4BE02571202A00D42624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA4BDF2571202A00D42624 /* AppDelegate.swift */; };
 		FAAA4BE92571202C00D42624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAA4BE82571202C00D42624 /* Assets.xcassets */; };
 		FAAA4BEC2571202C00D42624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA4BEA2571202C00D42624 /* LaunchScreen.storyboard */; };
@@ -94,6 +100,12 @@
 		FA9DF94F257846920039FC18 /* ClothesListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesListContainer.swift; sourceTree = "<group>"; };
 		FA9DF954257848A60039FC18 /* ClothesListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesListItemCell.swift; sourceTree = "<group>"; };
 		FA9DF95D257848ED0039FC18 /* ClothesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesListItem.swift; sourceTree = "<group>"; };
+		FA9DF992257A347B0039FC18 /* CatalogListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListItemCell.swift; sourceTree = "<group>"; };
+		FA9DF997257A35920039FC18 /* CatalogListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListItem.swift; sourceTree = "<group>"; };
+		FA9DF99D257A68340039FC18 /* ClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
+		FA9DF9A2257A68D10039FC18 /* ClothingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewModel.swift; sourceTree = "<group>"; };
+		FA9DF9A8257ADBA50039FC18 /* ClothingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingType.swift; sourceTree = "<group>"; };
+		FA9DF9AD257AE42A0039FC18 /* ClothingListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingListItemTableViewCell.swift; sourceTree = "<group>"; };
 		FAAA4BDC2571202A00D42624 /* Namshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namshi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA4BDF2571202A00D42624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAA4BE82571202C00D42624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -215,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				FA9DF954257848A60039FC18 /* ClothesListItemCell.swift */,
+				FA9DF992257A347B0039FC18 /* CatalogListItemCell.swift */,
+				FA9DF9AD257AE42A0039FC18 /* ClothingListItemTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -230,6 +244,7 @@
 		FA9DF8432574ED050039FC18 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				FA9DF99C257A67CD0039FC18 /* Clothing */,
 				FA9DF9152576CDD50039FC18 /* Base */,
 				FA9DF8F7257563FA0039FC18 /* Catalog */,
 				FA9DF8E9257553DB0039FC18 /* Home */,
@@ -278,8 +293,26 @@
 			isa = PBXGroup;
 			children = (
 				FA9DF95D257848ED0039FC18 /* ClothesListItem.swift */,
+				FA9DF997257A35920039FC18 /* CatalogListItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA9DF99C257A67CD0039FC18 /* Clothing */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DF99D257A68340039FC18 /* ClothingViewController.swift */,
+				FA9DF9A2257A68D10039FC18 /* ClothingViewModel.swift */,
+			);
+			path = Clothing;
+			sourceTree = "<group>";
+		};
+		FA9DF9A7257ADB940039FC18 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				FA9DF9A8257ADBA50039FC18 /* ClothingType.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		FAAA4BD32571202A00D42624 = {
@@ -307,6 +340,7 @@
 		FAAA4BDE2571202A00D42624 /* Namshi */ = {
 			isa = PBXGroup;
 			children = (
+				FA9DF9A7257ADB940039FC18 /* Enums */,
 				FA9DF95C257848CD0039FC18 /* Models */,
 				FA9DF9262577DD9F0039FC18 /* Protocols */,
 				FA9DF8302574ED050039FC18 /* Views */,
@@ -579,13 +613,16 @@
 				FA9DF8EB257553FA0039FC18 /* HomeViewModel.swift in Sources */,
 				FA9DF8F9257564270039FC18 /* CatalogViewModel.swift in Sources */,
 				FA9DF8D3257512840039FC18 /* MainTabBarViewController.swift in Sources */,
+				FA9DF998257A35920039FC18 /* CatalogListItem.swift in Sources */,
 				FA9DF81B2574EC7C0039FC18 /* StringExtensions.swift in Sources */,
 				FA9DF81D2574EC7C0039FC18 /* NSObjectExtensions.swift in Sources */,
 				FA9DF8922574F4710039FC18 /* GlobalStyles.swift in Sources */,
 				FA9DF9172576CE000039FC18 /* SearchBarViewController.swift in Sources */,
+				FA9DF9AE257AE42A0039FC18 /* ClothingListItemTableViewCell.swift in Sources */,
 				FA9DF8292574ECA20039FC18 /* Colors.swift in Sources */,
 				FA9DF8F3257563F50039FC18 /* CatalogViewController.swift in Sources */,
 				FA9DF950257846920039FC18 /* ClothesListContainer.swift in Sources */,
+				FA9DF9A9257ADBA50039FC18 /* ClothingType.swift in Sources */,
 				FA9DF95E257848ED0039FC18 /* ClothesListItem.swift in Sources */,
 				FA9DF81F2574EC7C0039FC18 /* UIColorExtensions.swift in Sources */,
 				FA9DF8792574ED050039FC18 /* BaseViewController.swift in Sources */,
@@ -593,6 +630,7 @@
 				FA9DF81E2574EC7C0039FC18 /* UIApplicationExtensions.swift in Sources */,
 				FAAA4BE02571202A00D42624 /* AppDelegate.swift in Sources */,
 				FA9DF9302577DF050039FC18 /* PageControlDelegate.swift in Sources */,
+				FA9DF99E257A68340039FC18 /* ClothingViewController.swift in Sources */,
 				FA9DF8272574ECA20039FC18 /* StringResources.swift in Sources */,
 				FA9DF8E2257553B00039FC18 /* HomeViewController.swift in Sources */,
 				FA9DF8102574EB640039FC18 /* Router.swift in Sources */,
@@ -600,7 +638,9 @@
 				FA9DF81C2574EC7C0039FC18 /* UIViewExtensions.swift in Sources */,
 				FA9DF955257848A60039FC18 /* ClothesListItemCell.swift in Sources */,
 				FA9DF80E2574EB640039FC18 /* NavigatedToAware.swift in Sources */,
+				FA9DF993257A347C0039FC18 /* CatalogListItemCell.swift in Sources */,
 				FA9DF9282577DDBE0039FC18 /* Initializable.swift in Sources */,
+				FA9DF9A3257A68D10039FC18 /* ClothingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 import Foundation
 
 extension String {
+    static var empty = ""
+        
     var isValidURL: Bool {
         let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
         if let match = detector?.firstMatch(in: self,

@@ -19,5 +19,6 @@ class DIContainerConfigurator {
     private static func registerViewModels() {
         container.autoregister(HomeViewModel.self, initializer: HomeViewModel.init)
         container.autoregister(CatalogViewModel.self, initializer: CatalogViewModel.init)
+        container.autoregister(ClothingViewModel.self, initializer: ClothingViewModel.init)
     }
 }

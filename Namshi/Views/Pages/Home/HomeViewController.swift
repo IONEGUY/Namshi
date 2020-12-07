@@ -103,7 +103,7 @@ class HomeViewController: SearchBarViewController, MVVMViewController {
     private func setupConstraints() {
         scrollView.snp.makeConstraints { (make) in
             make.left.bottom.right.equalToSuperview().inset(15)
-            make.top.equalToSuperview().offset(150)
+            make.top.equalToSuperview()
         }
         premium.snp.makeConstraints { (make) in
             make.left.top.width.equalToSuperview()
