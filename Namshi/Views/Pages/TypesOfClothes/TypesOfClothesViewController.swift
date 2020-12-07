@@ -26,6 +26,7 @@ class TypesOfClothesViewController: BaseViewController, MVVMViewController {
         setupRightBarButtonItem()
         
         clothesListContainer.items = viewModel?.clothingItems ?? []
+        clothesListContainer.itemSelected = viewModel?.clothesSelected
         
         view.addSubview(clothesListContainer)
         setupConstraints()

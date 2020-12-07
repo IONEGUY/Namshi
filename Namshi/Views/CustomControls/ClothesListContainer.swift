@@ -10,6 +10,7 @@ import Closures
 
 class ClothesListContainer: UICollectionView {
     var items: [ClothesListItem] = []
+    var itemSelected: ((ClothesListItem?) -> ())?
 
     init() {
         super.init(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
@@ -35,11 +36,15 @@ class ClothesListContainer: UICollectionView {
             (cell as? ClothesListItemCell)?.initialize(data: fieldOfScience)
             return cell ?? UICollectionViewCell()
         }
-        .sizeForItemAt(handler: { [weak self] indexPath in
+        .sizeForItemAt { [weak self] indexPath in
             guard let self = self else { return .zero }
             return CGSize(width: self.frame.width / 2 - 5,
                           height: 350)
-        })
+        }
+        .didSelectItemAt { [weak self] indexPath in
+            let item = self?.items[indexPath.row]
+            self?.itemSelected?(item)
+        }
         .reloadData()
     }
 }

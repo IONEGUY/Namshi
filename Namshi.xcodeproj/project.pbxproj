@@ -12,6 +12,8 @@
 		E7F3BA26CE770E4CF5D33535 /* Pods_Namshi_NamshiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205946454CA73BC182D66DC1 /* Pods_Namshi_NamshiUITests.framework */; };
 		FA40835F257E667200485509 /* TypesOfClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40835E257E667200485509 /* TypesOfClothesViewController.swift */; };
 		FA408364257E6B0C00485509 /* TypesOfClothesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA408363257E6B0C00485509 /* TypesOfClothesViewModel.swift */; };
+		FA40836A257E9AE500485509 /* ClothesDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA408369257E9AE500485509 /* ClothesDetailedViewController.swift */; };
+		FA40836F257E9AFD00485509 /* ClothesDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40836E257E9AFD00485509 /* ClothesDetailedViewModel.swift */; };
 		FA9DF80E2574EB640039FC18 /* NavigatedToAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF80A2574EB640039FC18 /* NavigatedToAware.swift */; };
 		FA9DF80F2574EB640039FC18 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF80B2574EB640039FC18 /* MVVMViewController.swift */; };
 		FA9DF8102574EB640039FC18 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF80C2574EB640039FC18 /* Router.swift */; };
@@ -79,6 +81,8 @@
 		D4E2B6ACF780E3C3229C281D /* Pods-Namshi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Namshi.debug.xcconfig"; path = "Target Support Files/Pods-Namshi/Pods-Namshi.debug.xcconfig"; sourceTree = "<group>"; };
 		FA40835E257E667200485509 /* TypesOfClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesOfClothesViewController.swift; sourceTree = "<group>"; };
 		FA408363257E6B0C00485509 /* TypesOfClothesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesOfClothesViewModel.swift; sourceTree = "<group>"; };
+		FA408369257E9AE500485509 /* ClothesDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesDetailedViewController.swift; sourceTree = "<group>"; };
+		FA40836E257E9AFD00485509 /* ClothesDetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesDetailedViewModel.swift; sourceTree = "<group>"; };
 		FA9DF80A2574EB640039FC18 /* NavigatedToAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatedToAware.swift; sourceTree = "<group>"; };
 		FA9DF80B2574EB640039FC18 /* MVVMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		FA9DF80C2574EB640039FC18 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -183,6 +187,15 @@
 			path = TypesOfClothes;
 			sourceTree = "<group>";
 		};
+		FA408368257E9AA100485509 /* ClothesDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FA408369257E9AE500485509 /* ClothesDetailedViewController.swift */,
+				FA40836E257E9AFD00485509 /* ClothesDetailedViewModel.swift */,
+			);
+			path = ClothesDetail;
+			sourceTree = "<group>";
+		};
 		FA9DF8092574EB640039FC18 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +270,7 @@
 		FA9DF8432574ED050039FC18 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				FA408368257E9AA100485509 /* ClothesDetail */,
 				FA40835D257E640F00485509 /* TypesOfClothes */,
 				FA9DF99C257A67CD0039FC18 /* Clothing */,
 				FA9DF9152576CDD50039FC18 /* Base */,
@@ -641,6 +655,7 @@
 				FA9DF81F2574EC7C0039FC18 /* UIColorExtensions.swift in Sources */,
 				FA9DF8792574ED050039FC18 /* BaseViewController.swift in Sources */,
 				FA9DF80F2574EB640039FC18 /* MVVMViewController.swift in Sources */,
+				FA40836A257E9AE500485509 /* ClothesDetailedViewController.swift in Sources */,
 				FA9DF81E2574EC7C0039FC18 /* UIApplicationExtensions.swift in Sources */,
 				FAAA4BE02571202A00D42624 /* AppDelegate.swift in Sources */,
 				FA9DF9302577DF050039FC18 /* PageControlDelegate.swift in Sources */,
@@ -655,6 +670,7 @@
 				FA9DF955257848A60039FC18 /* ClothesListItemCell.swift in Sources */,
 				FA9DF80E2574EB640039FC18 /* NavigatedToAware.swift in Sources */,
 				FA9DF993257A347C0039FC18 /* CatalogListItemCell.swift in Sources */,
+				FA40836F257E9AFD00485509 /* ClothesDetailedViewModel.swift in Sources */,
 				FA9DF9282577DDBE0039FC18 /* Initializable.swift in Sources */,
 				FA9DF9A3257A68D10039FC18 /* ClothingViewModel.swift in Sources */,
 			);

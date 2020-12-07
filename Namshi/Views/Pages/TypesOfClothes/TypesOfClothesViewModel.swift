@@ -10,10 +10,12 @@ import Foundation
 class TypesOfClothesViewModel: NavigatedToAware {
     var title: String = .empty
     var clothingItems: [ClothesListItem] = []
+    var clothingType: ClothingType?
 
     func navigatedTo(_ params: [String : Any]) {
         guard let clothingType = params["ClothingType"] as? ClothingType else { return }
         
+        self.clothingType = clothingType
         switch clothingType {
         case .clothing:
             title = "Dress"
@@ -47,5 +49,12 @@ class TypesOfClothesViewModel: NavigatedToAware {
                                 priceString: "47.30 AED")
             ]
         }
+    }
+    
+    func clothesSelected(clothesListItem: ClothesListItem?) {
+        Router.show(ClothesDetailedViewController.self, params: [
+            "ClothingType": clothingType,
+            "ClothesListItem": clothesListItem
+        ])
     }
 }
