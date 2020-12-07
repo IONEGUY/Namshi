@@ -14,6 +14,13 @@ class BaseViewController: UIViewController {
 
         setupLeftBarButtonItem()
     }
+    
+    func setupRightBarButtonItem() {
+        let rightBarButtonItem = UIBarButtonItem()
+        rightBarButtonItem.image = UIImage(named: "search")?
+            .withRenderingMode(.alwaysOriginal)
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
 
     private func setupLeftBarButtonItem() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
