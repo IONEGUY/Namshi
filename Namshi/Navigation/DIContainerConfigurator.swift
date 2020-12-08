@@ -20,5 +20,7 @@ class DIContainerConfigurator {
         container.autoregister(HomeViewModel.self, initializer: HomeViewModel.init)
         container.autoregister(CatalogViewModel.self, initializer: CatalogViewModel.init)
         container.autoregister(ClothingViewModel.self, initializer: ClothingViewModel.init)
+        container.autoregister(TypesOfClothesViewModel.self, initializer: TypesOfClothesViewModel.init)
+        container.autoregister(ClothesDetailedViewModel.self, initializer: ClothesDetailedViewModel.init)
     }
 }

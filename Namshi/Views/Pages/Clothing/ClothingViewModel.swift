@@ -23,4 +23,11 @@ class ClothingViewModel: NavigatedToAware {
             clothingItems = [(imageName: "mask", clothesName: "Face mask")]
         }
     }
+    
+    func clothingItemSelected(clothingItemName: String?) {
+        Router.show(TypesOfClothesViewController.self, params: [
+            "ClothingType": clothingItemName == "dress"
+                ? ClothingType.clothing
+                : ClothingType.faceMask])
+    }
 }

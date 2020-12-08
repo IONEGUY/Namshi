@@ -33,13 +33,6 @@ class ClothingViewController: BaseViewController, MVVMViewController {
         view.setNeedsUpdateConstraints()
     }
     
-    private func setupRightBarButtonItem() {
-        let rightBarButtonItem = UIBarButtonItem()
-        rightBarButtonItem.image = UIImage(named: "search")?
-            .withRenderingMode(.alwaysOriginal)
-        navigationItem.rightBarButtonItem = rightBarButtonItem
-    }
-    
     private func setupTableView() {
         view.addSubview(tableView)
         tableView.register(ClothingListItemTableViewCell.self,
@@ -56,11 +49,13 @@ class ClothingViewController: BaseViewController, MVVMViewController {
                 (cell as? ClothingListItemTableViewCell)?.initialize(data: clothingItem)
                 return cell ?? UITableViewCell()
             }
+            .didSelectRowAt { [weak self] indexPath in
+                let clothingItem = self?.viewModel?.clothingItems[indexPath.row]
+                self?.viewModel?.clothingItemSelected(clothingItemName: clothingItem?.imageName)
+            }
     }
     
     private func setupConstraints() {
-        let defaulfOffset: CGFloat = 60
-        let barHeight = navigationController?.navigationBar.bounds.size.height ?? 0
         tableView.snp.makeConstraints { (make) in
             make.left.bottom.right.equalToSuperview().inset(16)
             make.top.equalToSuperview()

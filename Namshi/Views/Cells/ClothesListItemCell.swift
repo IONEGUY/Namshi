@@ -10,6 +10,7 @@ import UIKit
 class ClothesListItemCell: UICollectionViewCell, Initializable {
     private var image: UIImageView = {
         let imageView = UIImageView()
+        imageView.backgroundColor = UIColor(hex: 0xEBEAEC)
         return imageView
     }()
     
