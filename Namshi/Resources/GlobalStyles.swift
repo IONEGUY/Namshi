@@ -15,7 +15,7 @@ class GlobalStyles {
 
     private class func setupTransparentNavigationBar() {
         UINavigationBar.appearance().shadowImage = UIImage()
-        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         
         UISearchBar.appearance().placeholder = .searchBarPlaceholder
         UISearchBar.appearance().barTintColor = .searchBar_barTintColor

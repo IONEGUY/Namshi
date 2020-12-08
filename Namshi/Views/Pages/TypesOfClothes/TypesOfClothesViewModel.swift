@@ -48,13 +48,14 @@ class TypesOfClothesViewModel: NavigatedToAware {
                                 clothesSubName: "Antibacterial face mask",
                                 priceString: "47.30 AED")
             ]
+        case .none:
+            break
         }
     }
     
     func clothesSelected(clothesListItem: ClothesListItem?) {
         Router.show(ClothesDetailedViewController.self, params: [
-            "ClothingType": clothingType,
-            "ClothesListItem": clothesListItem
+            "ClothingType": clothingType
         ])
     }
 }
