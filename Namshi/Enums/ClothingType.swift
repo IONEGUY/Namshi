@@ -10,5 +10,6 @@ import Foundation
 enum ClothingType {
     case
     clothing,
-    faceMask
+    faceMask,
+    none
 }

@@ -50,6 +50,15 @@
 		FAAA4BEC2571202C00D42624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAA4BEA2571202C00D42624 /* LaunchScreen.storyboard */; };
 		FAAA4BF72571202C00D42624 /* NamshiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA4BF62571202C00D42624 /* NamshiTests.swift */; };
 		FAAA4C022571202C00D42624 /* NamshiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA4C012571202C00D42624 /* NamshiUITests.swift */; };
+		FAD450D5257F850C00C27270 /* ClothesPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450D4257F850C00C27270 /* ClothesPhotosView.swift */; };
+		FAD450DA257FDFE300C27270 /* ClothesColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450D9257FDFE300C27270 /* ClothesColorView.swift */; };
+		FAD450DF257FFCF600C27270 /* FitClothesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450DE257FFCF600C27270 /* FitClothesView.swift */; };
+		FAD450E4258001A600C27270 /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450E3258001A600C27270 /* Corner.swift */; };
+		FAD450E9258012D600C27270 /* ChoosePhotoPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450E8258012D600C27270 /* ChoosePhotoPopup.swift */; };
+		FAD450F0258028B800C27270 /* GallaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450EF258028B800C27270 /* GallaryViewController.swift */; };
+		FAD450F8258028CA00C27270 /* GallaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450F7258028CA00C27270 /* GallaryViewModel.swift */; };
+		FAD450FD2580290800C27270 /* MaskFittingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450FC2580290800C27270 /* MaskFittingViewModel.swift */; };
+		FAD451022580292800C27270 /* MaskFittingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD451012580292800C27270 /* MaskFittingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +134,15 @@
 		FAAA4BFD2571202C00D42624 /* NamshiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NamshiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAA4C012571202C00D42624 /* NamshiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamshiUITests.swift; sourceTree = "<group>"; };
 		FAAA4C032571202C00D42624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD450D4257F850C00C27270 /* ClothesPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesPhotosView.swift; sourceTree = "<group>"; };
+		FAD450D9257FDFE300C27270 /* ClothesColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesColorView.swift; sourceTree = "<group>"; };
+		FAD450DE257FFCF600C27270 /* FitClothesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitClothesView.swift; sourceTree = "<group>"; };
+		FAD450E3258001A600C27270 /* Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
+		FAD450E8258012D600C27270 /* ChoosePhotoPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePhotoPopup.swift; sourceTree = "<group>"; };
+		FAD450EF258028B800C27270 /* GallaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewController.swift; sourceTree = "<group>"; };
+		FAD450F7258028CA00C27270 /* GallaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewModel.swift; sourceTree = "<group>"; };
+		FAD450FC2580290800C27270 /* MaskFittingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskFittingViewModel.swift; sourceTree = "<group>"; };
+		FAD451012580292800C27270 /* MaskFittingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskFittingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +281,10 @@
 			isa = PBXGroup;
 			children = (
 				FA9DF94F257846920039FC18 /* ClothesListContainer.swift */,
+				FAD450D4257F850C00C27270 /* ClothesPhotosView.swift */,
+				FAD450D9257FDFE300C27270 /* ClothesColorView.swift */,
+				FAD450DE257FFCF600C27270 /* FitClothesView.swift */,
+				FAD450E8258012D600C27270 /* ChoosePhotoPopup.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -270,6 +292,8 @@
 		FA9DF8432574ED050039FC18 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				FAD450EE2580288200C27270 /* MaskFitting */,
+				FAD450ED2580287900C27270 /* Gallary */,
 				FA408368257E9AA100485509 /* ClothesDetail */,
 				FA40835D257E640F00485509 /* TypesOfClothes */,
 				FA9DF99C257A67CD0039FC18 /* Clothing */,
@@ -339,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				FA9DF9A8257ADBA50039FC18 /* ClothingType.swift */,
+				FAD450E3258001A600C27270 /* Corner.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -398,6 +423,24 @@
 				FAAA4C032571202C00D42624 /* Info.plist */,
 			);
 			path = NamshiUITests;
+			sourceTree = "<group>";
+		};
+		FAD450ED2580287900C27270 /* Gallary */ = {
+			isa = PBXGroup;
+			children = (
+				FAD450EF258028B800C27270 /* GallaryViewController.swift */,
+				FAD450F7258028CA00C27270 /* GallaryViewModel.swift */,
+			);
+			path = Gallary;
+			sourceTree = "<group>";
+		};
+		FAD450EE2580288200C27270 /* MaskFitting */ = {
+			isa = PBXGroup;
+			children = (
+				FAD451012580292800C27270 /* MaskFittingViewController.swift */,
+				FAD450FC2580290800C27270 /* MaskFittingViewModel.swift */,
+			);
+			path = MaskFitting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -654,24 +697,33 @@
 				FA9DF95E257848ED0039FC18 /* ClothesListItem.swift in Sources */,
 				FA9DF81F2574EC7C0039FC18 /* UIColorExtensions.swift in Sources */,
 				FA9DF8792574ED050039FC18 /* BaseViewController.swift in Sources */,
+				FAD450E9258012D600C27270 /* ChoosePhotoPopup.swift in Sources */,
+				FAD450D5257F850C00C27270 /* ClothesPhotosView.swift in Sources */,
 				FA9DF80F2574EB640039FC18 /* MVVMViewController.swift in Sources */,
+				FAD450DA257FDFE300C27270 /* ClothesColorView.swift in Sources */,
 				FA40836A257E9AE500485509 /* ClothesDetailedViewController.swift in Sources */,
 				FA9DF81E2574EC7C0039FC18 /* UIApplicationExtensions.swift in Sources */,
+				FAD450FD2580290800C27270 /* MaskFittingViewModel.swift in Sources */,
 				FAAA4BE02571202A00D42624 /* AppDelegate.swift in Sources */,
 				FA9DF9302577DF050039FC18 /* PageControlDelegate.swift in Sources */,
+				FAD450F0258028B800C27270 /* GallaryViewController.swift in Sources */,
 				FA9DF99E257A68340039FC18 /* ClothingViewController.swift in Sources */,
 				FA9DF8272574ECA20039FC18 /* StringResources.swift in Sources */,
+				FAD450DF257FFCF600C27270 /* FitClothesView.swift in Sources */,
 				FA9DF8E2257553B00039FC18 /* HomeViewController.swift in Sources */,
 				FA9DF8102574EB640039FC18 /* Router.swift in Sources */,
 				FA40835F257E667200485509 /* TypesOfClothesViewController.swift in Sources */,
 				FA9DF8112574EB640039FC18 /* DIContainerConfigurator.swift in Sources */,
 				FA9DF81C2574EC7C0039FC18 /* UIViewExtensions.swift in Sources */,
+				FAD450E4258001A600C27270 /* Corner.swift in Sources */,
 				FA408364257E6B0C00485509 /* TypesOfClothesViewModel.swift in Sources */,
 				FA9DF955257848A60039FC18 /* ClothesListItemCell.swift in Sources */,
 				FA9DF80E2574EB640039FC18 /* NavigatedToAware.swift in Sources */,
+				FAD450F8258028CA00C27270 /* GallaryViewModel.swift in Sources */,
 				FA9DF993257A347C0039FC18 /* CatalogListItemCell.swift in Sources */,
 				FA40836F257E9AFD00485509 /* ClothesDetailedViewModel.swift in Sources */,
 				FA9DF9282577DDBE0039FC18 /* Initializable.swift in Sources */,
+				FAD451022580292800C27270 /* MaskFittingViewController.swift in Sources */,
 				FA9DF9A3257A68D10039FC18 /* ClothingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

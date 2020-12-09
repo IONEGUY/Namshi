@@ -21,6 +21,8 @@ class ClothingViewModel: NavigatedToAware {
         case .faceMask:
             title = "Accessories"
             clothingItems = [(imageName: "mask", clothesName: "Face mask")]
+        case .none:
+            break
         }
     }
     
