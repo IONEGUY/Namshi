@@ -60,7 +60,7 @@ class MaskFittingViewController: UIViewController, MVVMViewController {
     
     private func setupMasksContainer() {
         masksContainer.subviews.forEach { $0.removeFromSuperview() }
-        viewModel?.otherMasks.forEach { mask in
+        viewModel?.masks.forEach { mask in
             let button = UIButton()
             button.backgroundColor = .white
             button.setImage(UIImage(named: mask), for: .normal)
