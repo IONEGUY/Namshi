@@ -60,6 +60,7 @@
 		FAD450FD2580290800C27270 /* MaskFittingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD450FC2580290800C27270 /* MaskFittingViewModel.swift */; };
 		FAD451022580292800C27270 /* MaskFittingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD451012580292800C27270 /* MaskFittingViewController.swift */; };
 		FAD4510B2580DA0200C27270 /* PhotoPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4510A2580DA0200C27270 /* PhotoPickerService.swift */; };
+		FAD4511925811DC500C27270 /* MaskFittingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4511825811DC500C27270 /* MaskFittingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		FAD450FC2580290800C27270 /* MaskFittingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskFittingViewModel.swift; sourceTree = "<group>"; };
 		FAD451012580292800C27270 /* MaskFittingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskFittingViewController.swift; sourceTree = "<group>"; };
 		FAD4510A2580DA0200C27270 /* PhotoPickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerService.swift; sourceTree = "<group>"; };
+		FAD4511825811DC500C27270 /* MaskFittingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskFittingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 				FAD450D9257FDFE300C27270 /* ClothesColorView.swift */,
 				FAD450DE257FFCF600C27270 /* FitClothesView.swift */,
 				FAD450E8258012D600C27270 /* ChoosePhotoPopup.swift */,
+				FAD4511825811DC500C27270 /* MaskFittingView.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -724,6 +727,7 @@
 				FA9DF8E2257553B00039FC18 /* HomeViewController.swift in Sources */,
 				FA9DF8102574EB640039FC18 /* Router.swift in Sources */,
 				FA40835F257E667200485509 /* TypesOfClothesViewController.swift in Sources */,
+				FAD4511925811DC500C27270 /* MaskFittingView.swift in Sources */,
 				FA9DF8112574EB640039FC18 /* DIContainerConfigurator.swift in Sources */,
 				FA9DF81C2574EC7C0039FC18 /* UIViewExtensions.swift in Sources */,
 				FAD450E4258001A600C27270 /* Corner.swift in Sources */,
