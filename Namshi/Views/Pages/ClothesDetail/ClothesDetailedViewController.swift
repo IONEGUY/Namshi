@@ -7,6 +7,7 @@
 
 import UIKit
 import Closures
+import RxSwift
 
 class ClothesDetailedViewController: UIViewController, MVVMViewController {
     typealias ViewModelType = ClothesDetailedViewModel
@@ -71,11 +72,17 @@ class ClothesDetailedViewController: UIViewController, MVVMViewController {
     
     var viewModel: ClothesDetailedViewModel?
     
+    private let photoPickerService = PhotoPickerService()
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let viewModel = self.viewModel else { return }
         
         view.backgroundColor = .white
+        photoPickerService.selectedPhoto.subscribe { [weak self] image in
+            self?.viewModel?.navigateToClothesFitting(image)
+        }.disposed(by: disposeBag)
         
         addSubviews()
         clothesPhotosView.fitClotherButtonPressed = fitClotherButtonPressed
@@ -158,7 +165,10 @@ class ClothesDetailedViewController: UIViewController, MVVMViewController {
         
         let popup = ChoosePhotoPopup()
         cover.addSubview(popup)
-        popup.doItButtonTapped = viewModel?.navigateToGallary
+        popup.doItButtonTapped = { [weak self] in
+            self?.photoPickerService.pickImageFromGallery()
+            cover.removeFromSuperview()
+        }
         popup.setupView()
         
         cover.snp.makeConstraints { (make) in

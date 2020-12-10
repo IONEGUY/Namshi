@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ClothesDetailedViewModel: NavigatedToAware {
     var name: String = .empty
@@ -50,8 +51,8 @@ class ClothesDetailedViewModel: NavigatedToAware {
         }
     }
     
-    func navigateToGallary() {
-        Router.show(GallaryViewController.self)
+    func navigateToClothesFitting(_ image: UIImage) {
+        Router.show(ClothesFittingViewController.self, params: [ "Image": image ])
     }
     
     func navigateToMaskFitting() {
