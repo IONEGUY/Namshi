@@ -9,7 +9,7 @@ import UIKit
 import Closures
 import RxSwift
 
-class ClothesDetailedViewController: UIViewController, MVVMViewController {
+class ClothesDetailedViewController: UIViewController, MVVMViewController, ClothesPhotosViewDelegate {
     typealias ViewModelType = ClothesDetailedViewModel
     
     private let scrollView: UIScrollView = {
@@ -70,6 +70,11 @@ class ClothesDetailedViewController: UIViewController, MVVMViewController {
         return clothesListContainer
     }()
     
+    
+    deinit {
+        print("\(String(describing: self)) released")
+    }
+    
     var viewModel: ClothesDetailedViewModel?
     
     private let photoPickerService = PhotoPickerService()
@@ -85,7 +90,7 @@ class ClothesDetailedViewController: UIViewController, MVVMViewController {
         }.disposed(by: disposeBag)
         
         addSubviews()
-        clothesPhotosView.fitClotherButtonPressed = fitClotherButtonPressed
+        clothesPhotosView.clothesPhotosViewDelegate = self
         setupInfoLabel(viewModel)
         setupClothesListContainer(viewModel)
         setupRightBarButtonItem()
@@ -146,7 +151,7 @@ class ClothesDetailedViewController: UIViewController, MVVMViewController {
         }
     }
     
-    private func fitClotherButtonPressed() {
+    func fitClotherButtonPressed() {
         if viewModel?.clothingType == .clothing {
             showPopup()
             return

@@ -20,27 +20,32 @@ class CatalogListItemCell: UITableViewCell, Initializable {
         label.textColor = .black
         return label
     }()
+    
+    private var container: UIView = {
+        let view = UIView()
+        return view
+    }()
         
     func initialize(data: Any?) {
         guard let catalogListItem = data as? CatalogListItem else { return }
         icon.image = UIImage(named: catalogListItem.imageName)
         categoryName.text = catalogListItem.categoryName
-        contentView.backgroundColor = catalogListItem.color
+        container.backgroundColor = catalogListItem.color
  
         selectionStyle = .none
-        contentView.applyRoundedStyle(cornerRadius: 8)
-        contentView.addShadow()
+        container.applyRoundedStyle(cornerRadius: 8)
+        container.addShadow()
         
-        addSubview(contentView)
-        contentView.addSubview(icon)
-        contentView.addSubview(categoryName)
+        addSubview(container)
+        container.addSubview(icon)
+        container.addSubview(categoryName)
         
         setupConstraints()
         setNeedsUpdateConstraints()
     }
     
     private func setupConstraints() {
-        contentView.snp.makeConstraints { (make) in
+        container.snp.makeConstraints { (make) in
             make.left.right.bottom.equalToSuperview()
             make.top.equalToSuperview().inset(10)
         }
