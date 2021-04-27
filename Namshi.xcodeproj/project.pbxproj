@@ -14,6 +14,7 @@
 		FA408364257E6B0C00485509 /* TypesOfClothesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA408363257E6B0C00485509 /* TypesOfClothesViewModel.swift */; };
 		FA40836A257E9AE500485509 /* ClothesDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA408369257E9AE500485509 /* ClothesDetailedViewController.swift */; };
 		FA40836F257E9AFD00485509 /* ClothesDetailedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40836E257E9AFD00485509 /* ClothesDetailedViewModel.swift */; };
+		FA5390C525856A6E009389E9 /* ClothesPhotosViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5390C425856A6E009389E9 /* ClothesPhotosViewDelegate.swift */; };
 		FA9DF80E2574EB640039FC18 /* NavigatedToAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF80A2574EB640039FC18 /* NavigatedToAware.swift */; };
 		FA9DF80F2574EB640039FC18 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF80B2574EB640039FC18 /* MVVMViewController.swift */; };
 		FA9DF8102574EB640039FC18 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9DF80C2574EB640039FC18 /* Router.swift */; };
@@ -94,6 +95,7 @@
 		FA408363257E6B0C00485509 /* TypesOfClothesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesOfClothesViewModel.swift; sourceTree = "<group>"; };
 		FA408369257E9AE500485509 /* ClothesDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesDetailedViewController.swift; sourceTree = "<group>"; };
 		FA40836E257E9AFD00485509 /* ClothesDetailedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesDetailedViewModel.swift; sourceTree = "<group>"; };
+		FA5390C425856A6E009389E9 /* ClothesPhotosViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesPhotosViewDelegate.swift; sourceTree = "<group>"; };
 		FA9DF80A2574EB640039FC18 /* NavigatedToAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatedToAware.swift; sourceTree = "<group>"; };
 		FA9DF80B2574EB640039FC18 /* MVVMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		FA9DF80C2574EB640039FC18 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 			children = (
 				FA9DF9272577DDBE0039FC18 /* Initializable.swift */,
 				FA9DF92F2577DF050039FC18 /* PageControlDelegate.swift */,
+				FA5390C425856A6E009389E9 /* ClothesPhotosViewDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -737,6 +740,7 @@
 				FA9DF80E2574EB640039FC18 /* NavigatedToAware.swift in Sources */,
 				FAD450F8258028CA00C27270 /* ClothesFittingViewModel.swift in Sources */,
 				FA9DF993257A347C0039FC18 /* CatalogListItemCell.swift in Sources */,
+				FA5390C525856A6E009389E9 /* ClothesPhotosViewDelegate.swift in Sources */,
 				FA40836F257E9AFD00485509 /* ClothesDetailedViewModel.swift in Sources */,
 				FA9DF9282577DDBE0039FC18 /* Initializable.swift in Sources */,
 				FAD451022580292800C27270 /* MaskFittingViewController.swift in Sources */,

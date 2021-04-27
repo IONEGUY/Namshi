@@ -16,6 +16,10 @@ class TypesOfClothesViewController: BaseViewController, MVVMViewController {
         return clothesListContainer
     }()
     
+    deinit {
+        print("\(String(describing: self)) released")
+    }
+    
     var viewModel: TypesOfClothesViewModel?
     
     override func viewDidLoad() {

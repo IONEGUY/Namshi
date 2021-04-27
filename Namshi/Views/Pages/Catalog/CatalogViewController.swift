@@ -25,6 +25,10 @@ class CatalogViewController: SearchBarViewController, MVVMViewController {
         setupConstraints()
         view.setNeedsUpdateConstraints()
     }
+    
+    deinit {
+        print("\(String(describing: self)) released")
+    }
 
     private func setupTableView() {
         view.addSubview(tableView)

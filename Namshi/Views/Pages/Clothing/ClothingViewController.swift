@@ -17,6 +17,9 @@ class ClothingViewController: BaseViewController, MVVMViewController {
                            forCellReuseIdentifier: UITableViewCell.typeName)
         return tableView
     }()
+    deinit {
+        print("\(String(describing: self)) released")
+    }
     
     typealias ViewModelType = ClothingViewModel
 

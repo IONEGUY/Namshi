@@ -42,8 +42,8 @@ class ClothesPhotosView: UIScrollView {
         return imageView
     }()
     
-    var fitClotherButtonPressed: (() -> ())?
-    
+    var clothesPhotosViewDelegate: ClothesPhotosViewDelegate?
+        
     private var contentCentered = false
     
     func setupView(_ imageName: String) {
@@ -61,7 +61,7 @@ class ClothesPhotosView: UIScrollView {
         scaledImage.image = UIImage(named: imageName)
         scaledImageWrapped.clipsToBounds = true
         scaledImageWrapped.backgroundColor = defaultImageBackgroundColor
-        fitClothesView.fitClotherButtonPressed = fitClotherButtonPressed
+        fitClothesView.fitClotherButtonPressed = clothesPhotosViewDelegate?.fitClotherButtonPressed
         fitClothesView.backgroundColor = defaultImageBackgroundColor
         fitClothesView.setupView(imageName)
         

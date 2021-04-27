@@ -58,6 +58,10 @@ class MaskFittingViewController: UIViewController, MVVMViewController {
         view.setNeedsUpdateConstraints()
     }
     
+    deinit {
+        print("\(String(describing: self)) released")
+    }
+    
     private func setupMasksContainer() {
         masksContainer.subviews.forEach { $0.removeFromSuperview() }
         viewModel?.masks.forEach { mask in

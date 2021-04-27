@@ -18,6 +18,10 @@ class HomeViewController: SearchBarViewController, MVVMViewController {
         return scrollView
     }()
     
+    deinit {
+        print("\(String(describing: self)) released")
+    }
+    
     private var premium = UIView()
     
     private var autumn = UIView()

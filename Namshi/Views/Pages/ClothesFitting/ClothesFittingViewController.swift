@@ -111,6 +111,11 @@ class ClothesFittingViewController: UIViewController, MVVMViewController, UIGest
         rootContainer.addSubview(addToCartButton)
         rootContainer.addSubview(fittingImage)
     }
+    
+    
+    deinit {
+        print("\(String(describing: self)) released")
+    }
 
     private func setupConstraints() {
         let barHeight = navigationController?.navigationBar.bounds.size.height ?? 0
